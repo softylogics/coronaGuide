@@ -2,14 +2,14 @@
     <string name="app_name">coronaGuide</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Covid19 Safety Guidelines</string>
+    <string name="nav_header_subtitle">Corona Virus</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_home">Covid19 Overview</string>
+    <string name="menu_gallery">Guidelines about Mask Usage</string>
+    <string name="menu_slideshow">Myth about Covid19</string>
 
     <string name="home_second">Home Second</string>
 </resources>

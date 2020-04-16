@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/covid_overiew">
 
     <fragment
-        android:id="@+id/nav_home"
+        android:id="@+id/covid_overiew"
         android:name="com.example.coronaguide.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/corona_overview">
@@ -16,13 +16,13 @@
 
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/mask_guidelines"
         android:name="com.example.coronaguide.ui.gallery.GalleryFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/mask_guidelines" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
+        android:id="@+id/myths_corona"
         android:name="com.example.coronaguide.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/myths_corona" />
