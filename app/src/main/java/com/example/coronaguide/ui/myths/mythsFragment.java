@@ -1,6 +1,8 @@
-package com.example.coronaguide.ui.slideshow;
+package com.example.coronaguide.ui.myths;
 
 import android.os.Bundle;
+import android.text.Html;
+import android.text.Spanned;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,20 +15,24 @@ import android.arch.lifecycle.ViewModelProviders;
 
 import com.example.coronaguide.R;
 
-public class SlideshowFragment extends Fragment {
+public class mythsFragment extends Fragment {
 
-    private SlideshowViewModel slideshowViewModel;
+    private mythsViewModel mythsViewModel;
+    private TextView textview;
+    private Spanned Text;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        slideshowViewModel =
-                ViewModelProviders.of(this).get(SlideshowViewModel.class);
+        mythsViewModel =
+                ViewModelProviders.of(this).get(mythsViewModel.class);
         View root = inflater.inflate(R.layout.myths_corona, container, false);
-        final TextView textView = root.findViewById(R.id.text_slideshow);
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        textview = root.findViewById(R.id.linkmyth);
+        Text = Html.fromHtml("All Info on this page is taken from this URL on WHO website. <br />" +
+                "<a href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters</a>");
+        mythsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                textView.setText(s);
+
             }
         });
         return root;

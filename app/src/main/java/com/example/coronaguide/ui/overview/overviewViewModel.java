@@ -1,14 +1,14 @@
-package com.example.coronaguide.ui.home;
+package com.example.coronaguide.ui.overview;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+public class overviewViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public overviewViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is home fragment");
     }

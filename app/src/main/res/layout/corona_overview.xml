@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".ui.overview.overviewFragment">
 
     <TextView
         android:layout_width="match_parent"
@@ -15,6 +15,16 @@
         android:textStyle="bold"
         android:textSize="30sp"
         android:text="Covid 19 Overview"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/linkoverview"
+
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+
+        android:textSize="10sp"
+        />
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="wrap_content">

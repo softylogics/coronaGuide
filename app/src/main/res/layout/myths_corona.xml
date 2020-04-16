@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.slideshow.SlideshowFragment"
+    tools:context=".ui.myths.mythsFragment"
     android:orientation="vertical">
 
     <TextView
@@ -17,12 +17,14 @@
         android:text="Myths about Covid-19"/>
     <TextView
         android:layout_width="match_parent"
-        android:layout_marginTop="20dp"
+        android:id="@+id/linkmyth"
+
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:textStyle="bold"
-        android:textSize="30sp"
-        android:text="All Info on this page is taken from this URL on WHO website."/>
+        android:inputType="textUri"
+        android:textSize="10sp"
+        />
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="wrap_content">

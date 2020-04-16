@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.gallery.GalleryFragment">
+    tools:context=".ui.mask.MaskFragment">
 <TextView
     android:layout_width="match_parent"
     android:layout_marginTop="20dp"
@@ -14,6 +14,16 @@
     android:textStyle="bold"
     android:textSize="30sp"
     android:text="How to use Protection Mask during Covid-19 Pandemic"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/linkmask"
+
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+
+        android:textSize="10sp"
+       />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
